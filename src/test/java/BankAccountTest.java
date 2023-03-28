@@ -96,6 +96,7 @@ public class BankAccountTest {
     public void canPayInterest(){
         double actual =  account.payInterest(0.005);
         double expected = 500.25;
+        assertThat(actual).isEqualTo(expected);
     }
 
 }
